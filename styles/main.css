@@ -1,0 +1,512 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+html {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-image: url("../images/whitediamond.png");
+  /* opacity: 0.5; */
+  font-family: 'Raleway', sans-serif;
+  max-width: 1500px;
+  min-height: 100%;
+  position: relative;
+}
+
+body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.window-container {
+  font-family: 'Raleway', sans-serif;
+  width: 300px;
+  position: relative;
+  border: 9px solid rgb(7, 120, 118);
+  margin: 5% auto;
+  padding: 5px 20px 1px 20px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.window-header {
+  color: gray;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 32px auto 5px auto;
+  width: 135px;
+}
+
+.window-label {
+  padding-top: 12px;
+  display: inline-block;
+}
+
+.window-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.window-content:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.window-close {
+  background: gray;
+  border-radius: 7px;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: absolute;
+  padding: 5px;
+  right: -9px;
+  top: -9px;
+}
+
+.header {
+  background: #077876;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.title {
+  border-radius: 2px;
+  color: white;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  margin: 0px auto;
+  padding: 0.4em;
+  text-align: center;
+}
+
+.suitcase_img {
+  margin-right: 6px;
+  vertical-align: bottom;
+  width: 38px;
+}
+
+.navigation-container {
+  background-color: white;
+  border-radius: 2px;
+  padding: 6px;
+}
+
+.navigation {
+  margin: 0 auto;
+}
+
+.nav-link {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding: 3px 11px;
+  text-transform: uppercase;
+}
+
+.nav-link a {
+  border-bottom: 1px solid transparent;
+  color: #4F637C;
+  text-decoration: none;
+  -webkit-transition: border-color .5s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  border-bottom: 2px solid #9C1C5C;
+}
+
+.deals-header {
+  background-position: left;
+  border-radius: 2px;
+  font-family: 'Raleway', sans-serif;
+  display: table;
+  color: #989898;
+  margin: 25px auto 0px auto;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.headline {
+  color: #077876;
+  margin: 70px auto 0px auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+}
+
+.main-content {
+  background: transparent;
+  float: right;
+  width: 100%;
+}
+
+.form-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.contest-block {
+  background: #499AAF;
+  border-radius: 5px;
+  color: white;
+  background-image: url("../images/hawaii.jpg");
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  width: 200px;
+  padding: 0.8em;
+  text-align: center;
+  margin: 45px 0 40px 0;
+}
+
+.camera_img {
+  display: block;
+  width: 61px;
+  margin: 6px auto;
+  fill-opacity: 60%;
+}
+
+.main-content-container {
+  width: 90%;
+}
+
+.deals-panel-left {
+  background: transparent;
+  width: 100%;
+  min-height: 100%;
+  float: left;
+}
+
+.deals-panel-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.fig-location {
+  color: #4F637C;
+}
+
+.deals-panel-right {
+  background: transparent;
+  float: right;
+  margin-bottom: 75px;
+  margin-top: 27px;
+  width: 100%;
+}
+
+.footer {
+  background: #077876;
+  line-height: 28px;
+  position: absolute; 
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.copyright {
+  color: white;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.twitter_img {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 7px;
+  width: 25px;
+}
+
+.camera-small_img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 25px;
+}
+
+.fig-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.figure {
+  margin: 0 auto;
+  position: relative;
+  padding: 0 5px;
+}
+
+.fig-image-circle {
+  border-radius: 50%;
+  border: 5px solid #B8BABD;
+}
+
+.fig-image-rectangle {
+  border: 3px solid #B8BABD;
+}
+
+.fig-img-banner {
+  background: #FFFBFB;
+  color: #4F637C;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 9px;
+  position: absolute;
+  right: 8px;
+  text-align: center;
+  top: 3px;
+  width: 80px;
+}
+
+.fig-img-caption {
+   color: #4F637C;
+   font-family: 'Raleway', sans-serif;
+   font-size: 0.9em;
+   font-weight: bold;
+   line-height: 1.5em;
+   padding: 6px;
+   text-align: center;
+}
+
+.radio-tabs .state {
+  left: -10000px;
+  position: absolute;
+}
+
+.radio-tabs .tab {
+  background-color: #EFEFEF;
+  cursor: hand;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3em;
+  margin-left: 0px;
+  padding: 0.7em;
+}
+
+.radio-tabs .tab:hover {
+  background-color: #F1F0F0;
+}
+
+#flights:checked ~ .tabs #flights-tab,
+#hotels:checked ~ .tabs #hotels-tab,
+#cars:checked ~ .tabs #cars-tab {
+  background-color: #E4E4E4;
+  cursor: default;
+}
+
+.panels {
+  background-color: #E4E4E4;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  padding: 7px;
+}
+
+.radio-tabs {
+  margin-top: 45px; 
+  overflow: hidden;
+}
+
+.radio-tabs .panel {
+  display: none;
+}
+
+#flights:checked ~ .panels #flights-panel,
+#hotels:checked ~ .panels #hotels-panel,
+#cars:checked ~ .panels #cars-panel {
+  display: block;
+}
+
+.form {
+  float: left;
+  margin-top: 25px;
+  width: 50%;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  border: solid 1px #dcdcdc;
+  float: left;
+  font-size: 0.8em;
+  height: 43px;
+  margin-top: 4px;
+  padding-left: 6px;
+  width: 100%;
+}
+
+.button-center {
+  margin: 0px auto;
+  width: 204px;
+}
+
+.button {
+  background-color: rgb(156, 28, 92);
+  color: rgb(103, 128, 159);
+  color: white;
+  font-size: 1.3em;
+  height: 44px;
+  letter-spacing: 2px;
+  line-height: 2px;
+  margin: 28px auto;
+  padding: 17px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  -webkit-transition: background-image .5s ease-out;
+  -moz-transition: background-image .5s ease-out;
+  -o-transition: background-image .5s ease-out;
+  transition: background-image .5s ease-out;
+}
+
+/* Hawaii page CSS */
+
+.main-container {
+  align-items: center;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  min-height: 100%;
+}
+
+.main-container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.select-flex {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 736px;
+}
+
+.select-pic {
+  border: 3px solid #B8BABD;
+  max-width: 100%;
+}
+
+.locale-header {
+  color: #989898;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 15px;
+  width: 525px;
+  text-align: center;
+}
+
+.locale {
+  background: white;
+  color: #4F637C;
+  font-size: 1.9em;
+  padding: 10px 28px;
+  text-align: center;
+}
+
+.locale-description {
+  font-size: 0.5em;
+  max-width: 300px;
+  text-align: left;
+}
+
+.locale-name {
+  font-size: 0.6em;
+}
+
+.locale-button {
+  background-color: rgb(156, 28, 92);
+  color: white;
+  display: block;
+  font-size: 0.6em;
+  margin: 12px auto;
+  padding: 7px;
+  width: 138px;
+}
+
+.locale-others {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+
+
+@media (min-width: 612px) {
+  .title {
+    font-size: 2em;
+    line-height: 1em;
+    margin: 0;
+    margin-left: 7px;
+  }
+  .navigation {
+    margin: 0;
+    margin-right: 18px;
+  }
+}
+
+@media (min-width: 930px) {
+  .deals-panel-left {
+    width: 25%;
+  }
+  .main-content {
+    width: 75%;
+    height: 542px;
+  }
+  .contest-block {
+    margin: 73px 0 0;
+  }
+  .deals-panel-right {
+    width: 75%;
+  }
+  .main-content-container {
+    padding-top: 50px;
+    width: 63%;
+  }
+  .radio-tabs{
+     width: 100%;
+     margin-top: 0px;
+  }
+}
