@@ -147,16 +147,16 @@ a {
   font-family: 'Raleway', sans-serif;
   display: table;
   color: #4F637C;
-  margin: 25px auto 0px auto;
+  margin: 25px auto 6px auto;
   font-size: 1.3em;
   letter-spacing: 1px;
   font-weight: bold;
-  text-align: center;
+  /* text-align: left; */
 }
 
 .headline {
   color: #077876;
-  margin: 70px auto 0px auto;
+  margin: 40px auto 70px auto;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
