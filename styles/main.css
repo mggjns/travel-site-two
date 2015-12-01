@@ -151,12 +151,12 @@ a {
   font-size: 1.3em;
   letter-spacing: 1px;
   font-weight: bold;
-  /* text-align: left; */
+  text-align: center;
 }
 
 .headline {
   color: #077876;
-  margin: 40px auto 70px auto;
+  margin: 13px auto 70px auto;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 42px;
@@ -197,6 +197,7 @@ a {
 }
 
 .main-content-container {
+  padding-top: 50px;
   width: 90%;
 }
 
