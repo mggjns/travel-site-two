@@ -15,7 +15,6 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-image: url("../images/whitediamond.png");
   font-family: 'Raleway', sans-serif;
   max-width: 1500px;
   min-height: 100%;
