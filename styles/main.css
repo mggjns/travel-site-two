@@ -58,7 +58,7 @@ body:after {
   bottom: 0px;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 99999;
+  z-index: 999;
   opacity: 0;
   -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
@@ -154,11 +154,11 @@ a {
 }
 
 .headline {
-  color: #077876;
+  color: #8D2B53;
   margin: 13px auto 70px auto;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  font-size: 42px;
+  font-size: 46px;
 }
 
 .main-content {
@@ -501,7 +501,7 @@ a {
     width: 75%;
   }
   .main-content-container {
-    padding-top: 50px;
+    padding-top: 5%;
     width: 63%;
   }
   .radio-tabs{
